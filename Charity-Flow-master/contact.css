@@ -133,29 +133,6 @@ body {
   margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px 20px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .dropdown-menu {
-    position: relative;
-  }
-
-  .reachouttopheading h1,
-  .reachouttopheading h2 {
-    font-size: 40px;
-  }
-}
-
 .contactdetailsflex {
   display: flex;
   align-items: center;
@@ -470,7 +447,127 @@ label {
 }
 
 @media (max-width: 425px) {
-  .topdiv {
+  .dropdown,
+  .donate-btn {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .reachouttopheading h1 {
+    font-size: 20px;
+  }
+
+  .reachouttopheading h2 {
+    font-size: 16px;
+  }
+
+  .contactdetailsflex {
     flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .innercontact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .innercontact img {
+    width: 35px; /* Adjusted size for better fit */
+    height: auto;
+  }
+
+  .maketwoclose h2 {
+    font-size: 14px; /* Adjusted text size for better readability */
+    margin: 2px 0;
+  }
+
+  /* image container */
+
+  .outercontactflex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .leftsidecontactimage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .leftsidecontactimage img {
+    width: 80%; /* Adjusts image size for smaller screens */
+    max-width: 250px;
+    height: auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .container label {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .messages {
+    height: 100px;
+    resize: none;
+  }
+
+  .singlesubmitbutton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .rightsidelogodiv {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .rightsidelogodiv img {
+    width: 30px; /* Adjusted size for social icons */
+    height: auto;
+  }
+
+  .finalfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .makethriddiv {
+    opacity: 0;
+  }
+  .finalfooteriv {
+    display: none;
+  }
+  .footerline {
+    margin-top: 100px;
+  }
+
+  .extendedflex {
+    background-color: black;
   }
 }
